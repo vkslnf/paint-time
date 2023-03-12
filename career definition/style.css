@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+}
+
+.header {
+    background-image: url(bg.png);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.btn {
+    display: inline-block;
+    background: #1E1E1E;
+    color: #fff;
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    border-radius: 60px;
+    margin-top: 38%;
+    margin-left: 45%;
+}
+.content {
+    margin-left: 10px;
+}

@@ -1,0 +1,27 @@
+body {
+    background-color: #fff;
+}
+.Toolbar {
+    float: left;
+    font-family: 'Trebuchet MS'; 
+    font-size: 14px;
+    font-variant: small-caps;
+    text-align: center;
+    background: #F2F7FE;
+    padding: 10px 15px 3px 10px;
+    margin-bottom: 1px;
+    margin-right: 1px;
+    border: 1px solid #7B899B;
+    margin-left: 250px;
+}
+.CanvasContainer {
+    clear: both;
+    border: #7B899B;
+}
+.header {
+    background-image: url(bg.png);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}

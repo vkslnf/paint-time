@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./contex.css">
+    <script src="./canvas.js"></script>
+</head>
+<body>
+        <div class="Toolbar">
+                - Операции-<br>
+                <button onclick="saveCanvas()">Сохранить содержимое Canvas</button>
+                <button onclick="clearCanvas()">Очистить Canvas</button>
+                <div id="savedCopyContainer">
+                   <img id="savedImageCopy"><br>
+                   Щелкните правой кнопкой мыши для сохранения ...
+                </div>
+        </div>
+
+<div class="CanvasContainer">
+        <canvas id="drawingCanvas" width="1000" height="500"></canvas>
+</div>
+<div class="Toolbar">
+        - Толщина -<br>
+        <img src="http://professorweb.ru/downloads/pen_thin.gif" alt="Тонкая кисть" onclick="changeThickness(1, this)">
+        <img src="http://professorweb.ru/downloads/pen_medium.gif" alt="Нормальная кисть" onclick="changeThickness(5, this)"> 
+        <img src="http://professorweb.ru/downloads/pen_thick.gif" alt="Толстая кисть" onclick="changeThickness(10, this)">
+</div>
+<div class="Toolbar">
+        - Цвет -<br>
+        <img id="redPen" src="http://professorweb.ru/downloads/pen_red.gif" alt="Красная кисть" onclick="changeColor('rgb(212,21,29)', this)">
+        <img id="greenPen" src="http://professorweb.ru/downloads/pen_green.gif" alt="Зеленая кисть" onclick="changeColor('rgb(131,190,61)', this)"> 
+        <img id="bluePen" src="http://professorweb.ru/downloads/pen_blue.gif" alt="Синяя кисть" onclick="changeColor('rgb(0,86,166)', this)">
+        <img id="bluePen" src="http://professorweb.ru/downloads/pen_blue.gif" alt="Черная кисть" onclick="changeColor('rgb(0,0,0)', this)">
+        <img id="bluePen" src="http://professorweb.ru/downloads/pen_blue.gif" alt="Ластик" onclick="changeColor('rgb(255,255,255)', this)">
+</div>
+<div class="Toolbar">
+        <form action="./evaluate/index.html" target="_blank">
+                <button>Завершить</button>
+        </form>
+</div>
+<div class="wrapper">
+        <div class="timer">
+            <div class="timer__line"></div>
+            <div class="timer__body">
+                <div class="timer__counter">
+                    <span>1</span>
+                    <span>2</span>
+                    <span>3</span>
+                    <span>4</span>
+                    <span>5</span>
+                    <span>6</span>
+                    <span>7</span>
+                    <span>8</span>
+                    <span>9</span>
+                    <span>10</span>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
